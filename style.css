@@ -48,3 +48,27 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.face {
+    width: 32px;
+    height: 16px;
+    position: absolute;
+    border: 3px solid #003459;
+    border-top: none;
+    border-radius: 0 0 100px 100px;
+    top: 44px;
+    left: 84px;
+}
+
+.face::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #003459;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    left: -16px;
+    box-shadow: 48px 0 0 #003459;
+}
+
